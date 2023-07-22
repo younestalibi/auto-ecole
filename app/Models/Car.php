@@ -12,11 +12,11 @@ class Car extends Model
     use HasApiTokens, HasFactory, Notifiable;
     protected $fillable = [
         'name',
-        'type',
-        'price',
-        'color',
+        // 'type',
+        // 'price',
+        // 'color',
         'description',
-        'number_of_cars',
+        // 'number_of_cars',
         'picture',
 
         'lesson',

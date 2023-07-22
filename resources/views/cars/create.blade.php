@@ -26,7 +26,7 @@
                                 @csrf
                                 <div class="row">
                                     <div class="col-md-4 col-sm-12 mb-3">
-                                        <label class="form-label" for="basic-default-name">Name of car</label>
+                                        <label class="form-label" for="basic-default-name">Name of lesson</label>
                                         <input type="text" class="form-control @error('name') is-invalid @enderror " value="{{old('name')}}"
                                             id="name" name="name" placeholder="Name of car">
                                         @error('name')
@@ -37,9 +37,9 @@
                                     </div>
                                     {{-- ------------- --}}
                                     <div class="col-md-4 col-sm-12 mb-3">
-                                        <label class="form-label" for="basic-default-lesson">Lesson</label>
+                                        <label class="form-label" for="basic-default-lesson">Lesson File (*PDF)</label>
                                         <input type="file" class="form-control @error('lesson') is-invalid @enderror " value="{{old('name')}}"
-                                            id="lesson" name="lesson" >
+                                            id="lesson" name="lesson" accept=".pdf" >
                                         @error('lesson')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
@@ -47,7 +47,7 @@
                                         @enderror
                                     </div>
                                     <div class="col-md-4 col-sm-12 mb-3">                                   
-                                        <label for="lesson_type" class="form-label" for="basic-default-lesson_type">Select a Vehicle Type:</label>
+                                        <label for="lesson_type" class="form-label" for="basic-default-lesson_type">Select a Type:</label>
                                         <select id="lesson_type" name="lesson_type" placeholder="Name of car" 
                                         class="form-control @error('lesson_type') is-invalid @enderror " value="{{old('lesson_type')}}">
                                             <option value="truck">Truck</option>
@@ -63,7 +63,7 @@
 
 
                                     {{-- ------- --}}
-                                    <div class="col-md-4 col-sm-12 mb-3">
+                                    {{-- <div class="col-md-4 col-sm-12 mb-3">
                                         <label class="form-label" for="basic-default-type">type of car</label>
                                         <input type="text" class="form-control @error('type') is-invalid @enderror " value="{{old('type')}}"
                                             id="type" name="type" placeholder="type of car">
@@ -72,8 +72,8 @@
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                         @enderror
-                                    </div>
-                                    <div class="col-md-4 col-sm-12 mb-3">
+                                    </div> --}}
+                                    {{-- <div class="col-md-4 col-sm-12 mb-3">
                                         <label class="form-label" for="basic-default-price">price of car</label>
                                         <input type="number" class="form-control @error('price') is-invalid @enderror "
                                             id="price" name="price" placeholder="price of car" value="{{old('price')}}">
@@ -82,8 +82,8 @@
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                         @enderror
-                                    </div>
-                                    <div class="col-md-4 col-sm-12 mb-3">
+                                    </div> --}}
+                                    {{-- <div class="col-md-4 col-sm-12 mb-3">
                                         <label class="form-label" for="basic-default-name">color of car</label>
                                         <select class="form-control @error('color') is-invalid @enderror" name="color"
                                             id="color"  value="{{old('color')}}">
@@ -103,7 +103,7 @@
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                         @enderror
-                                    </div>
+                                    </div> --}}
                                     <div class="col-md-4 col-sm-12 mb-3">
                                         <label for="floatingTextarea2">Description of car</label>
                                         <textarea name="description" id="description" class="form-control @error('description') is-invalid @enderror"
@@ -115,7 +115,7 @@
                                             </span>
                                         @enderror
                                     </div>
-                                    <div class="col-md-4 col-sm-12 mb-3">
+                                    {{-- <div class="col-md-4 col-sm-12 mb-3">
                                         <label class="form-label" for="basic-default-number_of_cars">Number of
                                             cars</label>
                                         <input type="number"
@@ -126,7 +126,7 @@
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                         @enderror
-                                    </div>
+                                    </div> --}}
                                     <div
                                         class="col-md-12 col-sm-12 mb-3 d-flex justify-content-start align-items-center gap-4">
                                         <div class="col-5">

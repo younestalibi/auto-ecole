@@ -56,11 +56,11 @@ class CarController extends Controller
         // dd($request->file());
         $validated = $request->validate([
             'name' => 'required',
-            'type' => 'required',
-            'price' => 'required',
-            'color' => 'required',
+            // 'type' => 'required',
+            // 'price' => 'required',
+            // 'color' => 'required',
             'description' => 'required',
-            'number_of_cars' => 'required',
+            // 'number_of_cars' => 'required',
             'picture' => 'required',
 
             'lesson'=> 'required',

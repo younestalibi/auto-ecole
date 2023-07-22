@@ -56,8 +56,7 @@ class HomeController extends Controller
             return view('home', compact('carsCount','myProfile'));
         } 
         else {
-            $OraderCount = Order::where('user_id', '=', Auth::user()->id)->where('status', '=', 'incomplete')->count();
-            return view('homeClient', compact('myProfile', 'cars'));
+            return view('homeClient', compact('myProfile'));
         }
     }
 

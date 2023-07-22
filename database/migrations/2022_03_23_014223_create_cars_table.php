@@ -16,11 +16,11 @@ return new class extends Migration
         Schema::create('cars', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('type');
-            $table->double('price');
-            $table->string('color');
+            // $table->string('type');
+            // $table->double('price');
+            // $table->string('color');
             $table->text('description')->nullable();
-            $table->integer('number_of_cars')->nullable();
+            // $table->integer('number_of_cars')->nullable();
             $table->string('picture');
 
 

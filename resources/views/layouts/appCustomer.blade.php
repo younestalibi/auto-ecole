@@ -23,7 +23,7 @@
                         <div class="navbar-nav align-items-center mx-2">
                             <div class="nav-item d-flex align-items-center">
                                 <a href="{{ route('home') }}" class="text-dark">
-                                    <span class="text-nowrap navbar-brand">Location-De-Voiture</span>
+                                    <span class="text-nowrap navbar-brand">Auto-Ecole</span>
                                 </a>
                             </div>
                         </div>
