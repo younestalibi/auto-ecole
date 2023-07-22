@@ -10,7 +10,7 @@
     @if($cars->count()==0)
     no file exist
     @else 
-    <div class=" d-flex jusity-content-center mx-auto flex-wrap">
+    <div class=" w-100 d-flex jusity-content-center mx-auto flex-wrap">
         @foreach ($cars as $car)
             {{-- <div class="col-md-6 col-xl-4"> --}}
                 <div class="card  shadow-lg mb-5  rounded w-25 mx-2 ">

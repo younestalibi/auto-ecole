@@ -15,7 +15,7 @@
             <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                 <div class="app-brand demo">
                     <a href="{{ route('home') }}" class="app-brand-link">
-                        <span class="app-brand-text demo menu-text fw-bolder ms-2 text-uppercase text-center">Location <br>De Voiture</span>
+                        <span class="app-brand-text demo menu-text fw-bolder ms-2 text-uppercase text-center">Auto-Ecole</span>
                     </a>
 
                     <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -60,7 +60,7 @@
                     <li class="menu-item @if (request()->routeIs('cars-index')) active open @endif">
                         <a href="{{ route('cars-index') }}" class="menu-link">
                             <i class='menu-icon tf-icons bx bxs-car'></i>
-                            <div data-i18n="Cars text-info">Cars</div>
+                            <div data-i18n="Cars text-info">Lessons</div>
                         </a>
                     </li>
 
